@@ -1,5 +1,5 @@
 *.pyc
 __pycache__
-database/
+database/*.json
 .vscode
 index.json
