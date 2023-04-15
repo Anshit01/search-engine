@@ -1,7 +1,9 @@
 import json
 import re
 from os import listdir
+import time
 
+start  = time.time()
 index = {} # {term: {doc_id: [positions]}}}
 
 print("Loading documents and building index...")
@@ -33,3 +35,4 @@ with open("index.json", "w") as f:
     json.dump(index, f)
 
 print("Index saved to index.json")
+print(f"Time taken: {time.time() - start}")

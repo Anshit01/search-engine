@@ -3,3 +3,5 @@ __pycache__
 database/*.json
 .vscode
 index.json
+boolean_index.csv
+.DS_Store

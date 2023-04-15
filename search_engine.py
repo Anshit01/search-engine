@@ -2,13 +2,14 @@ import json
 from collections import OrderedDict
 import re
 import copy
+import time
 
-
+start = time.time()
 # {term: {doc_id: [positions]}}}
 with open("index.json") as f:
     index = json.load(f)
+print("Index loaded in", time.time() - start, "seconds")
 
-# for single word query
 while True:
     query = input("Enter your query: ").split()
     
